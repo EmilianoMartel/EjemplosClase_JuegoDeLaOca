@@ -12,7 +12,7 @@ public class BoardDataConverter
         _boardRuleList.Add(new ThrowAgain(data.throwAgain));
         _boardRuleList.Add(new GoBackward(DictionaryConverter(data.keyBackward,data.valueBackward)));
         _boardRuleList.Add(new GoForward(DictionaryConverter(data.keyFoward, data.valueFoward)));
-        _boardRuleList.Add(new LooseTurn(data.looseTrun));
+        _boardRuleList.Add(new LooseTurn(data.looseTurn));
         return _boardRuleList;
     }
 

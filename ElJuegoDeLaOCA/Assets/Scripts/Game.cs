@@ -11,27 +11,30 @@ public class Game : MonoBehaviour
     [SerializeField] private TMP_Text labelWhatHappened;
     [SerializeField] private Board board;
     [SerializeField] private TMP_Text labelDiceResult;
-    [SerializeField] private BoardData boardData;
+    [SerializeField] private LevelSelection levelSelection;
 
-    private Player player1 = new Player(1,1);
-    private Player player2 = new Player(2,1);
+    private Player player1 = new Player(1, 1);
+    private Player player2 = new Player(2, 1);
     private BoardDataConverter boardDataConverter = new();
 
     private List<Player> _players;
 
     private int turno = 1;
     private bool done = false;
-    
+
     private int diceResult = 0;
     private bool waitingForDice = false;
 
     private List<BoardRule> tablero = new List<BoardRule>();
 
-    private void Start()
+    private void OnEnable()
     {
-        Initialize(boardData);
-        
-        StartCoroutine(PlayTurn());
+        levelSelection.sendData += Initialize;
+    }
+
+    private void OnDisable()
+    {
+        levelSelection.sendData -= Initialize;
     }
 
     public void Initialize(BoardData tableroTemp)
@@ -43,6 +46,7 @@ public class Game : MonoBehaviour
 
         turno = 1;
         done = false;
+        StartCoroutine(PlayTurn());
     }
 
     private IEnumerator PlayTurn()  // ---> TAREA: Refactorear este método para que sea mas "clean code"

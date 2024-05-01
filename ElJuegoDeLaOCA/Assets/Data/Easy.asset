@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3565123b962e04c9c9ac2b9976a136, type: 3}
+  m_Name: Easy
+  m_EditorClassIdentifier: 
+  _name: Easy
+  _throwAgain: 0200000004000000
+  _keyFoward: 05000000090000000e00000014000000
+  _valueFoward: 17000000190000001d00000021000000
+  _keyBackward: 22000000
+  _valueBackward: 01000000
+  _looseTurn: 10000000

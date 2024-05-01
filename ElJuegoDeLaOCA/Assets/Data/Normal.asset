@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e3565123b962e04c9c9ac2b9976a136, type: 3}
-  m_Name: Board Data
+  m_Name: Normal
   m_EditorClassIdentifier: 
-  throwAgain: 1f000000
-  keyFoward: 02000000070000000e00000016000000
-  valueFoward: 150000000b0000001d00000018000000
-  keyBackward: 0c000000190000001e00000021000000
-  valueBackward: 01000000090000001b00000014000000
-  looseTrun: 0500000012000000
+  _name: Normal
+  _throwAgain: 1f000000
+  _keyFoward: 02000000070000000e00000016000000
+  _valueFoward: 150000000b0000001d00000018000000
+  _keyBackward: 0c000000190000001e00000021000000
+  _valueBackward: 01000000090000001b00000014000000
+  _looseTurn: 0500000012000000
