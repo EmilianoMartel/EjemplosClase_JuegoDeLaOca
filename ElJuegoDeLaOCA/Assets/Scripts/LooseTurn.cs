@@ -1,14 +1,14 @@
 ﻿
+using System;
 using System.Linq;
 
 public class LooseTurn : BoardRule
 {
     private int[] rules;
 
-    public LooseTurn()
+    public LooseTurn(int[] rule)
     {
-        //TAREA: RECIBIR EL ARRAY POR PARAMETRO ACA
-        rules = new int[]{5, 18};
+        rules = rule;
     }
 
     public override bool EsCompatible(int posicionJugador)

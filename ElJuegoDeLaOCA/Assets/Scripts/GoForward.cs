@@ -6,14 +6,9 @@ public class GoForward : BoardRule
 {
     private Dictionary<int, int> rules;
 
-    public GoForward()
+    public GoForward(Dictionary<int,int> rule)
     {
-        //TAREA: RECIBIR EL DICCIONARO POR PARAMETRO ACA
-        rules = new Dictionary<int, int>();
-        rules.Add(2, 21);
-        rules.Add(7, 11);
-        rules.Add(14, 22);
-        rules.Add(22, 24);
+        rules = rule;
     }
 
     public override bool EsCompatible(int posicionJugador)

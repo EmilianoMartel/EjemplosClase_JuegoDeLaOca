@@ -5,14 +5,9 @@ public class GoBackward : BoardRule
 {
     private Dictionary<int, int> rules;
 
-    public GoBackward()
+    public GoBackward(Dictionary<int, int> rule)
     {
-        //TAREA: RECIBIR EL DICCIONARO POR PARAMETRO ACA
-        rules = new Dictionary<int, int>();
-        rules.Add(12, 1);
-        rules.Add(25, 9);
-        rules.Add(30, 27);
-        rules.Add(33, 20);
+        rules = rule;
     }
 
     public override bool EsCompatible(int posicionJugador)

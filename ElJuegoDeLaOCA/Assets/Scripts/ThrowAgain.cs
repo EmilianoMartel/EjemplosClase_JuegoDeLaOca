@@ -5,10 +5,9 @@ public class ThrowAgain : BoardRule
 {
     private int[] rules;
 
-    public ThrowAgain()
+    public ThrowAgain(int[] boardNum)
     {
-        //TAREA: RECIBIR EL ARRAY POR PARAMETRO ACA
-        rules = new int[] { 31 };
+        rules = boardNum;
     }
 
     public override bool EsCompatible(int posicionJugador)
